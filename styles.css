@@ -128,7 +128,7 @@
         order: var(--bento-card-image-order);
     }
 
-    .bento-grid > :nth-child(1) {
+    .bento-grid> :nth-child(1) {
         --heading-font-size: var(--fs-xl);
         --heading-span-color: var(--accent-base);
         --bento-card-text-color: var(--white);
@@ -136,6 +136,15 @@
         --bento-card-padding: 50px;
         --bento-card-horizontal-alignment: center;
         --bento-card-image-width: 65%;
+        --bento-card-gap: 15px;
+    }
+
+    .bento-grid> :nth-child(2) {
+        
+        /* fixing shadow issue in asset */
+        >img {
+            filter: drop-shadow(0 0 1rem hsl(0 0 0/ 0.25))
+        }
     }
 }
 
